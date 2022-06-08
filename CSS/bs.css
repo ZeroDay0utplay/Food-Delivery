@@ -1687,10 +1687,10 @@ progress{
     font-size:1rem;
     font-weight:400;
     line-height:1.5;
-    color:#101010;
-    background-color:rgb(212, 170, 16);
+    color:#212529;
+    background-color:#fff;
     background-clip:padding-box;
-    border:1px solid #0c0c0c;
+    border:1px solid #ced4da;
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance:none;

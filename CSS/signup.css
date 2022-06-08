@@ -20,18 +20,6 @@ body {
   z-index: 2;
 }
 
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
 
 .logo{
     border: 2px solid #F45F04;
@@ -88,4 +76,41 @@ body {
 
 .fb{
     margin-left: 25px;
+}
+
+form i {
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+.email{
+  height: 60px;
+  width: 250px;
+  border: 1px solid grey;
+  margin-bottom: 10px;
+}
+
+.pwd{
+  margin-left: -10px;
+  height: 60px;
+  width: 250px;
+  border: 1px solid grey;
+  margin-bottom: 10px;
+}
+
+.inp{
+  width:100%;
+  padding:.375rem .75rem;
+  font-size:1rem;
+  font-weight:400;
+  line-height:1.5;
+  color:#212529;
+  background-color:#fff;
+  background-clip:padding-box;
+  border:1px solid #ced4da;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  border-radius:.25rem;
+  transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out
 }
