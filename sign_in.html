@@ -29,17 +29,17 @@
     <form>
         <img class="mb-4 logo" src="src/tac.PNG">
         <h1 class="h3 mb-3 fw-normal tit">Sign In</h1>
-        <form method="post">
-            <p class="form-floating">
-                <input class="inp" type="text" name="email" id="email">
-                <label for="email">Email</label>
-            </p>
-            <p class="form-floating">
-                <input class="inp" type="password" name="password" id="password"/>
-                <i class="bi bi-eye-slash" id="togglePassword"></i>
-                <label for="password">Password</label>
-            </p>
-        </form>
+
+        <div class="form-floating padd">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+        </div>
+        <a href="forgot_pwd.html" class="f_pwd">Forgot your password?</a>
+        <div class="form-floating padd">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <i class="bi bi-eye-slash" id="togglePassword"></i>
+            <label for="floatingPassword">Password</label>
+        </div>
 
         <p class="space_elem">New to Tac Tac Delivery? <a href="sign_up.html" class="si">Sign Up</a></p>
         <button class="w-100 btn btn-lg btn-primary su_btn" type="submit">Sign Up</button>
@@ -59,15 +59,23 @@
     </form>
     </main>
     <script>
-        const togglePassword = document.querySelector('#togglePassword');
-        const password = document.querySelector('#password');
-        togglePassword.addEventListener('click', function (e) {
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector("#floatingPassword");
+
+        togglePassword.addEventListener("click", function () {
             // toggle the type attribute
-            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-            password.setAttribute('type', type);
-            // toggle the eye / eye slash icon
-            this.classList.toggle('bi-eye');
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            
+            // toggle the icon
+            this.classList.toggle("bi-eye");
+        });
+
+        // prevent form submit
+        const form = document.querySelector("form");
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
         });
     </script>
-</body>
+  </body>
 </html>
