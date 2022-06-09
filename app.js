@@ -34,7 +34,7 @@ app.post("/sign_in.html", (req, res) => {
     check_mail(email);
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
 });
 
 
