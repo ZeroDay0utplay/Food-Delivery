@@ -26,12 +26,12 @@
   <body class="text-center">
 
     <main class="form-signin w-100 m-auto">
-    <form>
+    <form method="post" action="/sign_up.html">
         <img class="mb-4 logo" src="src/tac.PNG">
         <h1 class="h3 mb-3 fw-normal tit">Sign In</h1>
 
         <div class="form-floating padd">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
             <label for="floatingInput">Email address</label>
         </div>
         <a href="forgot_pwd.html" class="f_pwd">Forgot your password?</a>
@@ -44,7 +44,7 @@
         </div>
 
         <p class="space_elem">New to Tac Tac Delivery? <a href="sign_up.html" class="si">Sign Up</a></p>
-        <button class="w-100 btn btn-lg btn-primary su_btn" type="submit">Sign Up</button>
+        <button class="w-100 btn btn-lg btn-primary su_btn" type="submit">Sign In</button>
         <p class="mt-5 mb-3 text-muted">&copy; Tac Tac Delivery</p>
      
         <table>
