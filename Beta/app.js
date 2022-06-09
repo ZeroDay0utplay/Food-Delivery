@@ -31,21 +31,7 @@ app.post("/sign_in.html", (req, res) => {
     const email = req.body.email;
     if (email === "") res.sendFile(__dirname + "/invalid_u_pwd.html");
     else res.sendFile(sign_in);
-    check_mail(email);
 });
 
 app.listen(process.env.PORT || 3000, () => {
 });
-
-
-
-
-
-function check_mail(mail){
-    const alt = mail.split("@");
-    const dor = mail.split(".");
-    if (alt.length != 2 || dor.length != 2) return "Invalid Email";
-    fs.readFile("db.txt", "utf8", (err, data) => {
-        console.log(data);
-    });
-}

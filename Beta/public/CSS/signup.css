@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -12,8 +13,7 @@ body {
 }
 
 .form-signin {
-  max-width: 330px;
-  padding: 15px;
+  max-width: 80%;
 }
 
 .form-signin .form-floating:focus-within {
@@ -23,9 +23,10 @@ body {
 
 .logo{
     border: 2px solid #F45F04;
-    width: 200px;
-    height: 200px;
+    width: 50%;
+    height: 50%;
     border-radius: 100%;
+    margin-bottom: -100px;
 }
 
 .spc{
@@ -60,7 +61,7 @@ body {
 }
 
 .tit{
-    margin-top: 15px;
+    margin-top: 0;
     margin-bottom: 50px;
 }
 
