@@ -1,0 +1,11 @@
+.red_msg{
+    border-radius: 10px;
+    padding-top: 20px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: aliceblue;
+    background-color: rgb(245, 94, 94);
+    width: 300px;
+    height: 50px;
+}

@@ -1,0 +1,92 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 0px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+
+.logo{
+    border: 2px solid #F45F04;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.spc{
+    margin-right: 10px;
+}
+
+.padd{
+    margin-top: 5px;
+    margin-bottom: 5px;    
+}
+
+.si{
+    color: #F45F04;
+    text-decoration: none;
+}
+
+
+.su_btn{
+    background-color: #F45F04;
+    border-color: #F45F04;
+}
+
+.f_pwd{
+    color: grey;
+    text-decoration: none;
+    margin-left: 130px;
+}
+
+.space_elem{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tit{
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.sm{
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.instagram{
+    margin-left: 115px;
+}
+
+.fb{
+    margin-left: 25px;
+}
+
+form i {
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+
+
+.eye{
+  margin-top: -35px;
+  margin-left: 100%;
+  margin-bottom: 30px;
+}
