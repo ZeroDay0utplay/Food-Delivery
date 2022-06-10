@@ -29,9 +29,14 @@ app.post("/sign_up.html", (req, res) => {
 
 app.post("/sign_in.html", (req, res) => {
     const email = req.body.email;
-    if (email === "") res.sendFile(__dirname + "/invalid_u_pwd.html");
-    else res.sendFile(sign_in);
-    check_mail(email);
+    const emailChecked = check_mail(email);
+    if (emailChecked == -1) res.sendFile(__dirname + "/invalid_u_pwd.html");
+    else if (emailChecked == 1){
+        
+    }
+    else if (emailChecked == 0){
+        
+    }
 });
 
 app.listen(process.env.PORT || 3000, () => {
@@ -41,11 +46,28 @@ app.listen(process.env.PORT || 3000, () => {
 
 
 
+
+
+
+function str2list(str){
+    const lst = str.split("\n");
+    for (var i=0; i<lst.length; i++){
+        lst[i] = lst[i].trim("\r");
+    }
+    return lst;
+}
+
+
+
 function check_mail(mail){
     const alt = mail.split("@");
-    const dor = mail.split(".");
-    if (alt.length != 2 || dor.length != 2) return "Invalid Email";
-    fs.readFile("db.txt", "utf8", (err, data) => {
-        console.log(data);
+    const dot = mail.split(".");
+    if (alt != 2 || dot != 2) return -1;
+    fs.readFile(__dirname + "/db.txt", "utf8", (err, data) => {
+        const usrs = str2list(data);
+        for (var i=0; i<usrs.length; i++){
+            if (usrs[i] === mail) return 1;
+        }
+        return 0;
     });
 }

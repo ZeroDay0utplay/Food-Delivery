@@ -27,6 +27,10 @@
 
     <main class="form-signin w-100 m-auto">
     <form method="post" action="/sign_in.html">
+        <div class="alrt">
+            <center><strong id="succ">Log in Successfully!</strong></center>
+            <center><strong id="fail">Invalid Email or Password !</strong></center>
+        </div>
         <img class="mb-4 logo" src="src/tac.png">
         <h1 class="h3 mb-3 fw-normal tit">Sign In</h1>
 
@@ -44,7 +48,7 @@
         </div>
 
         <p class="space_elem">New to Tac Tac Delivery? <a href="sign_up.html" class="si">Sign Up</a></p>
-        <button class="w-100 btn btn-lg btn-primary su_btn" type="submit">Sign In</button>
+        <button class="w-100 btn btn-lg btn-primary su_btn" type="submit">Log In</button>
         <p class="mt-5 mb-3 text-muted">&copy; Tac Tac Delivery</p>
      
         <center>
@@ -63,5 +67,6 @@
     </form>
     </main>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>
 </html>
