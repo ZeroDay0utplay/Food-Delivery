@@ -22,7 +22,7 @@ body {
 
 
 .logo{
-  margin-top: 2%;
+  margin-top: 3%;
   border: 2px solid #F45F04;
   width: 50%;
   height: 50%;
@@ -89,9 +89,4 @@ form i {
   margin-top: -35px;
   margin-left: 100%;
   margin-bottom: 30px;
-}
-
-.alrt{
-  margin-top: -10%;
-  color: #f5f5f5;
 }
