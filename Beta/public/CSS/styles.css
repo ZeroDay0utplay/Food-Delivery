@@ -1,0 +1,11 @@
+body{
+    display:flex;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+.phone_num{
+    height: 5%;
+    background-color: #F45F04;
+}
