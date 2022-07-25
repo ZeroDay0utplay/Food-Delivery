@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ٌResto</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="CSS/main.css">
+    <link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <center><div class="appel">Pour commander, Appelez nous au : 56 66 52 14 ☎️</div></center>
+
+    <center><h3 class="prod"><%= produit %></h3></center>
+    	
+    <div class="dropdown spc">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Ingredients
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li>
+              <div class="harisa" style="white-space: nowrap;"> 
+                    <input min="0" max="100" class="inp" type="checkbox" name="harisa" id="harisa" style="display: inline-block;">  
+                    <p class="dropdown-item har" id="har_inp" style="display: inline-block;">Escalope</p>
+              </div>
+          </li>
+          <li>
+            <div class="harisa" style="white-space: nowrap;"> 
+                  <input min="0" max="100" class="inp" type="checkbox" name="harisa" id="harisa" style="display: inline-block;">  
+                  <p class="dropdown-item har" id="har_inp" style="display: inline-block;">Chawarma</p>
+            </div>
+        </li>
+        
+        <li>
+            <div class="harisa" style="white-space: nowrap;"> 
+                  <input min="0" max="100" class="inp" type="checkbox" name="harisa" id="harisa" style="display: inline-block;">  
+                  <p class="dropdown-item har" id="har_inp" style="display: inline-block;">Thon</p>
+            </div>
+        </li>
+        
+        <li>
+            <div class="harisa" style="white-space: nowrap;"> 
+                  <input min="0" max="100" class="inp" type="checkbox" name="harisa" id="harisa" style="display: inline-block;">  
+                  <p class="dropdown-item har" id="har_inp" style="display: inline-block;">Salami</p>
+            </div>
+        </li>
+
+        <li>
+            <div class="harisa" style="white-space: nowrap;"> 
+                  <input min="0" max="100" class="inp" type="checkbox" name="harisa" id="harisa" style="display: inline-block;">  
+                  <p class="dropdown-item har" id="har_inp" style="display: inline-block;">Jombon</p>
+            </div>
+        </li>
+
+        <li>
+            <div class="harisa" style="white-space: nowrap;"> 
+                  <input min="0" max="100" class="inp" type="checkbox" name="harisa" id="harisa" style="display: inline-block;">  
+                  <p class="dropdown-item har" id="har_inp" style="display: inline-block;">Kwika</p>
+            </div>
+        </li>
+
+      </div>
+
+    <div class="dropdown spc">
+	  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+		Sauces
+	  </button>
+	  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+		<li>
+            <div class="harisa" style="white-space: nowrap;">   
+                <input min="0" max="100" class="inp" type="range" name="harisa" id="harisa" style="display: inline-block;">
+                <p class="dropdown-item har" id="har_inp" style="display: inline-block;">Harisa</p>
+            </div>
+        </li>
+		<li>
+            <div style="white-space: nowrap;">
+                <input class="inp" type="range" name="sal_mech" id="sal_mech" style="display: inline-block;">
+                <p class="dropdown-item" style="display: inline-block;">Slata Mechwya</p>
+            </div>
+        </li>
+		<li>
+            <div style="white-space: nowrap;">
+                <input class="inp" type="range" name="may" id="may" style="display: inline-block;">
+                <p class="dropdown-item" style="display: inline-block;">Mayonnaise</p>
+            </div>
+        </li>
+	  </ul>
+	</div>
+    
+	<div class="dropdown spc">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Salades
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li>
+                <div style="white-space: nowrap;">
+                    <input class="inp" type="range" name="may" id="may" style="display: inline-block;">
+                    <p class="dropdown-item" style="display: inline-block;">Onion</p>
+                </div>
+            </li>
+            <li>
+                <div style="white-space: nowrap;">
+                    <input class="inp" type="range" name="may" id="may" style="display: inline-block;">
+                    <p class="dropdown-item" style="display: inline-block;">Tomate</p>
+                </div>
+            </li>
+          		<li>
+            <div style="white-space: nowrap;">
+                <input class="inp" type="range" name="may" id="may" style="display: inline-block;">
+                <p class="dropdown-item" style="display: inline-block;">Litue</p>
+            </div>
+        </li>
+        </ul>
+    </div>
+
+    <div class="dropdown spc">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Frites
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li>
+              <div class="harisa" style="white-space: nowrap;"> 
+                    <input min="0" max="100" class="inp" type="checkbox" name="harisa" id="harisa" style="display: inline-block;">  
+                    <p class="dropdown-item har" id="har_inp" style="display: inline-block;">Avec Frites</p>
+              </div>
+          </li>
+          <li>
+            <div class="harisa" style="white-space: nowrap;"> 
+                  <input min="0" max="100" class="inp" type="checkbox" name="harisa" id="harisa" style="display: inline-block;">  
+                  <p class="dropdown-item har" id="har_inp" style="display: inline-block;">Sans Frites</p>
+            </div>
+        </li>
+      </div>
+
+    <center><p class="copyright">&copy; Tac Tac Delivery</p></center>
+
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://www.instagram.com/"><img src="https://toppng.com/uploads/preview/ig-png-logo-svg-transparent-instagram-logo-png-gray-11562862657bh81afc1k3.png" class="sm instagram"></a>
+                </td>
+                <td>
+                    <a href="https://www.facebook.com/"><img src="https://icon-library.com/images/facebook-icon-for-website/facebook-icon-for-website-16.jpg" class="sm fb"></a>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body{
+    background-image: url("/src/Pizza.jpg");
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.appel{
+    padding-top: 20px;
+    height: 50px;
+    width: 100%;
+    background-color: orange;
+}
+
+.prod{
+    color: aliceblue;
+    margin-bottom: 30px;
+}
+
+.sm{
+    width: 30px;
+    height: 30px;
+}
+
+.instagram{
+    margin-left: -30%;
+}
+
+.spc{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    width: 120px;
+    background-color: orange;
+    border-color: orange;
+}
+
+.inp{
+    margin-left: 10px;
+}
+
+.prod{
+    font-size: 300%;
+    font-family: Segoe Script;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.copyright{
+    color: white;
+    margin-top: 20%;
+}
+
+.mama{
+    margin-bottom: 10%;
+    /* border-radius: 40%; */
+    width: 95%;
+    background-color: antiquewhite;
+}
