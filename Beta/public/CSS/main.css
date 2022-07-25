@@ -1,11 +1,5 @@
 body{
-    background-image: url("/src/Pizza.jpg");
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgb(250, 240, 224);
 }
 
 .appel{
@@ -16,7 +10,6 @@ body{
 }
 
 .prod{
-    color: aliceblue;
     margin-bottom: 30px;
 }
 
@@ -53,13 +46,12 @@ body{
 }
 
 .copyright{
-    color: white;
     margin-top: 20%;
 }
 
 .mama{
     margin-bottom: 10%;
-    /* border-radius: 40%; */
+    border-radius: 20%;
     width: 95%;
     background-color: antiquewhite;
 }
